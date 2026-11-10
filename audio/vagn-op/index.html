@@ -84,15 +84,19 @@
         </p>
 
         <!-- Actions -->
-        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-3 pt-2">
-          <button onclick="playTrack(1)" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-amber-500/20 transition-all">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            <span>Afspil fra start (Kap. 1)</span>
+        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2.5 pt-2">
+          <button onclick="playTrack(1)" class="px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-lg shadow-amber-500/20 transition-all">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <span>Start fra Kap. 1</span>
           </button>
-          <div class="px-3.5 py-2 rounded-xl bg-nordic-800/80 border border-slate-700/60 text-slate-300 text-xs flex items-center gap-2">
-            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-            <span>Direkte online streaming • Ingen login eller download påkrævet</span>
-          </div>
+          <button onclick="playSpecial('story')" class="px-3.5 py-2.5 rounded-xl bg-nordic-800 hover:bg-nordic-700 border border-slate-700 text-white font-medium text-xs flex items-center gap-1.5 transition-all">
+            <span>🚗</span>
+            <span>Kun historien (37 min)</span>
+          </button>
+          <button onclick="playSpecial('complete')" class="px-3.5 py-2.5 rounded-xl bg-nordic-800 hover:bg-nordic-700 border border-slate-700 text-white font-medium text-xs flex items-center gap-1.5 transition-all">
+            <span>🎧</span>
+            <span>Komplet udgave (61 min)</span>
+          </button>
         </div>
       </div>
     </div>
@@ -173,16 +177,16 @@
 
   <script>
     const chapters = [
-      { id: 1, title: "Kapitel 1: Mørke og lys", dur: "6:06", words: 11, desc: "Freja vågner på Rigshospitalet og møder sygeplejersken Hanne." },
-      { id: 2, title: "Kapitel 2: En fremmed by", dur: "5:20", words: 10, desc: "Dr. Christian Møller forklarer, at politiet fandt hende i havnen." },
-      { id: 3, title: "Kapitel 3: Tøjet på stolen", dur: "5:45", words: 13, desc: "Freja opdager tøjet og ser sit eget arrede ansigt i spejlet." },
-      { id: 4, title: "Kapitel 4: Nøglen", dur: "5:10", words: 11, desc: "Freja finder togbilletten og den mystiske messingnøgle 4B." },
-      { id: 5, title: "Kapitel 5: Gangen", dur: "5:30", words: 11, desc: "Freja tager elevatoren ned mod hospitalets stueetage." },
-      { id: 6, title: "Kapitel 6: I kantinen", dur: "5:15", words: 11, desc: "Freja køber mad i kantinen og betaler med kontanter." },
-      { id: 7, title: "Kapitel 7: Ved vinduet", dur: "5:25", words: 11, desc: "Kigger ud på et regnvådt København med cyklister og busser." },
-      { id: 8, title: "Kapitel 8: Manden med avisen", dur: "5:15", words: 11, desc: "En tavs mand observerer hende over kanten af sin avis." },
-      { id: 9, title: "Kapitel 9: Kiosken", dur: "5:35", words: 12, desc: "Avisoverskriften 'Ulykke ved havnen' udløser et flashback." },
-      { id: 10, title: "Kapitel 10: En fremmed i værelset", dur: "6:10", words: 12, desc: "Lukas står i værelset med røde blomster og kalder sig hendes kæreste." }
+      { id: 1, title: "Kapitel 1: Mørke og lys", dur: "7:52", storyDur: "5:40", vocabDur: "2:09", words: 11, desc: "Freja vågner på Rigshospitalet og møder sygeplejersken Hanne." },
+      { id: 2, title: "Kapitel 2: Det hvide værelse", dur: "6:53", storyDur: "4:55", vocabDur: "1:55", words: 10, desc: "Dr. Christian Møller forklarer, at politiet fandt hende i havnen." },
+      { id: 3, title: "Kapitel 3: Tøjet på stolen", dur: "6:27", storyDur: "3:53", vocabDur: "2:30", words: 13, desc: "Freja opdager tøjet og ser sit eget arrede ansigt i spejlet." },
+      { id: 4, title: "Kapitel 4: Tasken og nøglen", dur: "6:05", storyDur: "3:54", vocabDur: "2:08", words: 11, desc: "Freja finder togbilletten og den mystiske messingnøgle 4B." },
+      { id: 5, title: "Kapitel 5: Ude på gangen", dur: "6:31", storyDur: "4:18", vocabDur: "2:10", words: 11, desc: "Freja tager elevatoren ned mod hospitalets stueetage." },
+      { id: 6, title: "Kapitel 6: En kop kaffe", dur: "5:41", storyDur: "3:31", vocabDur: "2:06", words: 11, desc: "Freja køber mad i kantinen og betaler med kontanter." },
+      { id: 7, title: "Kapitel 7: Ved vinduet", dur: "4:45", storyDur: "2:30", vocabDur: "2:11", words: 11, desc: "Kigger ud på et regnvådt København med cyklister og busser." },
+      { id: 8, title: "Kapitel 8: Manden med avisen", dur: "4:28", storyDur: "2:20", vocabDur: "2:05", words: 11, desc: "En tavs mand observerer hende over kanten af sin avis." },
+      { id: 9, title: "Kapitel 9: Kiosken", dur: "5:16", storyDur: "2:52", vocabDur: "2:21", words: 12, desc: "Avisoverskriften 'Ulykke ved havnen' udløser et flashback." },
+      { id: 10, title: "Kapitel 10: En fremmed i værelset", dur: "6:23", storyDur: "3:59", vocabDur: "2:20", words: 12, desc: "Lukas står i værelset med røde blomster og kalder sig hendes kæreste." }
     ];
 
     let currentTrackIdx = 0;
@@ -225,6 +229,24 @@
       `;
       playlistContainer.appendChild(item);
     });
+
+    function playSpecial(mode) {
+      document.querySelectorAll('.track-card').forEach(el => el.classList.remove('border-amber-500/50', 'bg-nordic-800'));
+      if (mode === 'story') {
+        playerTitle.textContent = "Vågn op: Samlet Historie (Bil-udgave)";
+        totalDurationEl.textContent = "37:32";
+        audio.src = "vagn_op_full_story.mp3";
+      } else {
+        playerTitle.textContent = "Vågn op: Komplet Udgave (Historie & Gloser)";
+        totalDurationEl.textContent = "60:57";
+        audio.src = "vagn_op_complete_edition.mp3";
+      }
+      audio.playbackRate = speeds[speedIdx];
+      audio.play().then(() => updatePlayState(true)).catch(err => {
+        console.log("Audio play err:", err);
+        updatePlayState(true);
+      });
+    }
 
     function playTrack(chapterNum) {
       currentTrackIdx = chapterNum - 1;
