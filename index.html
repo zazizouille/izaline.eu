@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="da" class="dark">
+<html lang="en" class="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Izaline Book Collection | Dansk Letlæsning & Graded Readers</title>
-  <meta name="description" content="Izaline Book Collection udgiver fængslende danske letlæsningskrimier for voksne sproglærende. Lær dansk med spænding.">
+  <title>Izaline Book Collection | Danish Graded Readers for Language Learners</title>
+  <meta name="description" content="Izaline Book Collection publishes captivating Danish graded readers and Nordic noir mysteries for adult language learners. Learn Danish naturally with free audio companions.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -13,6 +13,7 @@
         extend: {
           colors: {
             nordic: {
+              950: '#0a0d14',
               900: '#0f141c',
               800: '#171f2c',
               700: '#222d3d',
@@ -55,19 +56,20 @@
       </a>
 
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-        <a href="#bøger" class="hover:text-amber-400 transition-colors">Bøger</a>
-        <a href="#serien" class="hover:text-amber-400 transition-colors">Serien</a>
+        <a href="#books" class="hover:text-amber-400 transition-colors">Books</a>
+        <a href="#method" class="hover:text-amber-400 transition-colors">The Method</a>
         <a href="/audio/vagn-op/" class="hover:text-amber-400 transition-colors flex items-center gap-1.5 text-amber-400/90">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
-          Gratis Lydbog
+          Free Audio Companion
         </a>
-        <a href="#om" class="hover:text-amber-400 transition-colors">Om Forlaget</a>
-        <a href="#kontakt" class="hover:text-amber-400 transition-colors">Kontakt</a>
+        <a href="#about" class="hover:text-amber-400 transition-colors">About</a>
+        <a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a>
       </nav>
 
       <div class="flex items-center gap-3">
-        <a href="https://amazon.com" target="_blank" rel="noopener" class="px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold text-xs tracking-wide transition-all shadow-md shadow-amber-500/20 hover:shadow-amber-500/30">
-          Køb på Amazon
+        <a href="/audio/vagn-op/" class="px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold text-xs tracking-wide transition-all shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          <span>Listen Free</span>
         </a>
       </div>
     </div>
@@ -75,7 +77,7 @@
 
   <main class="flex-grow">
     <!-- Hero Section -->
-    <section class="relative overflow-hidden pt-12 pb-24 border-b border-slate-800">
+    <section id="books" class="relative overflow-hidden pt-12 pb-24 border-b border-slate-800">
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-800/40 via-nordic-900 to-nordic-900 pointer-events-none"></div>
       
       <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -85,74 +87,61 @@
           <div class="lg:col-span-7 space-y-6">
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-medium">
               <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-              En dansk letlæsningskrimi • Begynderniveau
+              A Danish Graded Reader • Level A1 (Beginner)
             </div>
 
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
               VÅGN OP
             </h1>
             <p class="text-lg sm:text-xl text-amber-400/90 font-cinzel font-medium">
-              Serie: Hvem er jeg? — Bog 1
+              Series: Hvem er jeg? — Book 1
             </p>
 
             <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-serif-body">
-              En ung kvinde vågner i en hospitalsseng på Rigshospitalet i København med en hvid bandage om panden. Hovedet gør ondt. Hun husker intet—ikke engang sit eget navn. Hvem kan hun stole på i en kold og regnvåd by?
+              A young woman wakes up in a hospital bed at Rigshospitalet in Copenhagen with a white bandage wrapped around her head. Her body aches. She remembers nothing—not even her own name. Who can she trust in a cold, rain-swept city?
             </p>
 
             <!-- Learning Badges -->
-            <div class="grid grid-cols-3 gap-4 pt-2">
-              <div class="p-3 rounded-xl bg-nordic-800/80 border border-slate-700/60">
-                <div class="text-amber-400 font-bold text-sm sm:text-base">100% Nutid</div>
-                <div class="text-[11px] text-slate-400 mt-0.5">Letforståeligt nutidssprog uden svære datidsbøjninger</div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div class="p-4 rounded-xl bg-nordic-800/80 border border-slate-700/60">
+                <div class="text-amber-400 font-bold text-sm sm:text-base">Top 300 Words</div>
+                <div class="text-[12px] text-slate-400 mt-1 leading-snug">Built on the most essential high-frequency Danish words to build real reading fluency.</div>
               </div>
-              <div class="p-3 rounded-xl bg-nordic-800/80 border border-slate-700/60">
-                <div class="text-amber-400 font-bold text-sm sm:text-base">113 Nøgleord</div>
-                <div class="text-[11px] text-slate-400 mt-0.5">Omhyggeligt udvalgt begynderordforråd med gloser</div>
+              <div class="p-4 rounded-xl bg-nordic-800/80 border border-slate-700/60">
+                <div class="text-amber-400 font-bold text-sm sm:text-base">Focus on Present Tense</div>
+                <div class="text-[12px] text-slate-400 mt-1 leading-snug">Written primarily in the present tense (<em>nutid</em>) so you never get bogged down by complex verb endings.</div>
               </div>
-              <div class="p-3 rounded-xl bg-nordic-800/80 border border-slate-700/60">
-                <div class="text-amber-400 font-bold text-sm sm:text-base">Gratis Lydbog</div>
-                <div class="text-[11px] text-slate-400 mt-0.5">Professionel indtaling i 85% tempo med udtaletræning</div>
+              <div class="p-4 rounded-xl bg-nordic-800/80 border border-slate-700/60">
+                <div class="text-amber-400 font-bold text-sm sm:text-base">Free Audio Companion</div>
+                <div class="text-[12px] text-slate-400 mt-1 leading-snug">Clear studio narration spoken at a gentle 85% learner speed with 3-step pronunciation practice.</div>
               </div>
             </div>
 
             <!-- CTA Buttons -->
             <div class="flex flex-wrap items-center gap-4 pt-4">
-              <a href="https://amazon.com" target="_blank" rel="noopener" class="px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm tracking-wide transition-all shadow-lg shadow-amber-500/25 flex items-center gap-2">
-                <span>Hent på Amazon (Kindle & Papirbog)</span>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              <a href="/audio/vagn-op/" class="px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm tracking-wide transition-all shadow-lg shadow-amber-500/25 flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <span>Listen to Free Audio Companion</span>
               </a>
-              <a href="/audio/vagn-op/" class="px-6 py-3.5 rounded-xl bg-nordic-800 hover:bg-nordic-700 text-slate-200 border border-slate-700 font-semibold text-sm transition-all flex items-center gap-2">
-                <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                <span>Hør gratis lydbog</span>
-              </a>
+              <div class="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-nordic-800/80 border border-slate-700 text-slate-300 text-xs font-medium">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                <span>Ebook & Paperback Coming Soon</span>
+              </div>
             </div>
           </div>
 
-          <!-- Book Cover Mockup Column -->
+          <!-- Book Cover Column -->
           <div class="lg:col-span-5 flex justify-center">
-            <div class="relative group">
+            <div class="relative group max-w-xs sm:max-w-sm">
               <!-- Glow backdrop -->
               <div class="absolute -inset-2 bg-gradient-to-r from-amber-500/20 to-cyan-500/20 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity"></div>
               
-              <!-- Book Container -->
-              <div class="relative w-64 sm:w-72 aspect-[1/1.6] rounded-xl overflow-hidden shadow-2xl border border-slate-700 bg-nordic-800 flex flex-col justify-between p-6">
-                <div class="space-y-2 text-center">
-                  <div class="text-[10px] tracking-widest uppercase text-amber-400/90 font-semibold">Izaline Book Collection</div>
-                  <h2 class="text-3xl font-bold font-cinzel tracking-wider text-white">VÅGN OP</h2>
-                  <div class="text-xs text-slate-400 font-serif-body italic">En dansk letlæsningskrimi</div>
-                </div>
-
-                <div class="py-6 flex items-center justify-center">
-                  <div class="w-24 h-24 rounded-full border border-amber-500/40 flex items-center justify-center bg-nordic-900/60 shadow-inner">
-                    <span class="font-cinzel text-amber-400 text-xs tracking-widest text-center px-2">BOG 1 • A1</span>
-                  </div>
-                </div>
-
-                <div class="text-center space-y-1">
-                  <div class="inline-block px-2.5 py-1 rounded bg-amber-500/20 border border-amber-500/40 text-amber-300 text-[10px] font-semibold">
-                    Inkluderer gratis lydbog
-                  </div>
-                  <div class="text-[10px] text-slate-500">København • 2026</div>
+              <!-- Actual Master Cover Image -->
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 bg-nordic-800">
+                <img src="/images/cover.jpg" alt="Vågn op — Danish Graded Reader Book 1 Cover Artwork" class="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-300">
+                <div class="p-4 bg-nordic-900/90 border-t border-slate-800 text-center">
+                  <div class="text-xs font-semibold text-white">Vågn op (Wake Up) • Book 1</div>
+                  <div class="text-[11px] text-slate-400 mt-0.5">10 Illustrated Chapters • Includes Free Audio</div>
                 </div>
               </div>
             </div>
@@ -162,39 +151,39 @@
       </div>
     </section>
 
-    <!-- The Method & Story Section -->
-    <section id="serien" class="py-20 border-b border-slate-800 bg-nordic-800/40">
+    <!-- The Method Section -->
+    <section id="method" class="py-20 border-b border-slate-800 bg-nordic-800/40">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
-          <span class="text-xs font-semibold uppercase tracking-widest text-amber-400">Læringsmetoden</span>
-          <h2 class="text-3xl sm:text-4xl font-bold text-white">Lær dansk gennem spænding</h2>
+          <span class="text-xs font-semibold uppercase tracking-widest text-amber-400">The Approach</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white">Learn Danish Through Mystery, Not Drills</h2>
           <p class="text-slate-400 font-serif-body">
-            Glem kedelige grammatikøvelser. Med *Hvem er jeg?*-serien lærer du dansk ved at leve dig ind i en sammenhængende, realistisk krimi, hvor hvert kapitel gradvist udbygger dit ordforråd.
+            Grammar tables and isolated word lists rarely stick. With the <em>Hvem er jeg?</em> series, you acquire Danish naturally by immersing yourself in an engaging, serialized Nordic mystery tailored specifically for adult beginners.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="p-6 rounded-2xl bg-nordic-900/80 border border-slate-800 space-y-3">
             <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold">1</div>
-            <h3 class="text-lg font-bold text-white">Naturlig Forståelse</h3>
+            <h3 class="text-lg font-bold text-white">Natural Comprehension</h3>
             <p class="text-sm text-slate-400 leading-relaxed">
-              98% af ordene i hvert kapitel er kendte eller gennemskuelige. Du oplever flow i læsningen uden at skulle stoppe op i hver sætning.
+              Clear sentence structures and high-frequency core words allow you to enjoy reading in Danish from day one without stopping at every sentence.
             </p>
           </div>
 
           <div class="p-6 rounded-2xl bg-nordic-900/80 border border-slate-800 space-y-3">
             <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl font-bold">2</div>
-            <h3 class="text-lg font-bold text-white">Interaktive Ordforklaringer</h3>
+            <h3 class="text-lg font-bold text-white">113 Key Story Terms</h3>
             <p class="text-sm text-slate-400 leading-relaxed">
-              Læser du på Kindle eller tablet, kan du trykke direkte på nøgleordene for at se en øjeblikkelig dansk-engelsk ordforklaring.
+              Essential vocabulary words are highlighted throughout the chapters with immediate English translations, example sentences, and comprehension checks.
             </p>
           </div>
 
           <div class="p-6 rounded-2xl bg-nordic-900/80 border border-slate-800 space-y-3">
             <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">3</div>
-            <h3 class="text-lg font-bold text-white">Akustisk Zooming</h3>
+            <h3 class="text-lg font-bold text-white">3-Step Pronunciation Training</h3>
             <p class="text-sm text-slate-400 leading-relaxed">
-              Vores unikke 3-trins udtaletræning (75% $\rightarrow$ 100% $\rightarrow$ sætning) lærer dit øre at opfange danske vokaler og stød.
+              Our free audio portal trains your ear for Danish pronunciation: key terms are spoken first slowly (75%), then at natural speed (100%), followed by a model sentence.
             </p>
           </div>
         </div>
@@ -206,37 +195,38 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6">
         <div class="rounded-3xl bg-gradient-to-br from-nordic-800 to-nordic-900 border border-slate-700/70 p-8 sm:p-12 space-y-6 relative overflow-hidden shadow-2xl">
           <div class="space-y-2">
-            <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Kommer Snart</span>
-            <h2 class="text-2xl sm:text-3xl font-bold text-white">Bog 2: Lukas' Hemmelighed</h2>
+            <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Coming Next in the Series</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">Book 2: Lukas' Hemmelighed (Lukas' Secret)</h2>
           </div>
           <p class="text-slate-300 font-serif-body leading-relaxed">
-            Freja tager med Lukas hjem til hans smukke lejlighed i København. Han smiler og kalder sig hendes kæreste. Men i en hemmelig skuffe finder Freja et pas med et helt andet navn...
+            Freja goes home with Lukas to his stylish apartment in Copenhagen. He smiles warmly and calls himself her boyfriend. But hidden deep in a locked drawer, Freja finds a passport with a completely different name...
           </p>
 
-          <!-- Newsletter Signup Form -->
-          <div class="pt-4">
-            <form class="flex flex-col sm:flex-row gap-3 max-w-md" onsubmit="event.preventDefault(); alert('Tak for din tilmelding! Vi giver besked, så snart Bog 2 er klar.');">
-              <input type="email" required placeholder="Indtast din e-mailadresse..." class="px-4 py-3 rounded-xl bg-nordic-950/80 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-500 flex-grow">
-              <button type="submit" class="px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider transition-all whitespace-nowrap">
-                Få besked ved udgivelse
-              </button>
-            </form>
-            <p class="text-[11px] text-slate-500 mt-2">Vi respekterer dit privatliv. Ingen spam, kun vigtige udgivelsesnyheder.</p>
+          <!-- Simple Contact Box -->
+          <div class="pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-5 rounded-2xl bg-nordic-950/80 border border-slate-800">
+            <div class="space-y-1">
+              <div class="text-sm font-semibold text-white">Inquiries & Educational Orders</div>
+              <div class="text-xs text-slate-400">Questions about upcoming books or Danish classroom use? Reach out directly.</div>
+            </div>
+            <a href="mailto:contact@izaline.eu" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 hover:text-amber-300 font-semibold text-xs transition-colors flex items-center gap-2 whitespace-nowrap">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>contact@izaline.eu</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- About Publisher Section -->
-    <section id="om" class="py-16 border-b border-slate-800 bg-nordic-900">
+    <section id="about" class="py-16 border-b border-slate-800 bg-nordic-900">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
-        <h2 class="text-2xl font-bold text-white font-cinzel">Om Izaline Book Collection</h2>
+        <h2 class="text-2xl font-bold text-white font-cinzel">About Izaline Book Collection</h2>
         <p class="text-slate-400 text-sm max-w-2xl mx-auto font-serif-body leading-relaxed">
-          Izaline Book Collection er et uafhængigt forlag med base i København. Vi er dedikerede til at skabe fængslende, moderne letlæsningslitteratur for voksne og unge, der lærer dansk som fremmedsprog.
+          Izaline Book Collection is an independent publisher based in Copenhagen. We create modern, accessible graded readers for adult and young adult learners acquiring Danish as a foreign language.
         </p>
         <div class="pt-2">
           <span class="inline-block px-3 py-1 rounded-full bg-slate-800 text-slate-400 text-xs">
-            København, Danmark
+            Copenhagen, Denmark
           </span>
         </div>
       </div>
@@ -245,15 +235,15 @@
   </main>
 
   <!-- Footer -->
-  <footer id="kontakt" class="border-t border-slate-800 bg-nordic-950 text-slate-400 text-xs py-10">
+  <footer id="contact" class="border-t border-slate-800 bg-nordic-950 text-slate-400 text-xs py-10">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
       <div class="space-y-1 text-center sm:text-left">
         <div class="font-cinzel text-slate-200 font-bold text-sm tracking-wider">IZALINE BOOK COLLECTION</div>
-        <div class="text-slate-500">© 2026 Izaline Book Collection. All rights reserved. • København, Danmark</div>
+        <div class="text-slate-500">© 2026 Izaline Book Collection. All rights reserved. • Copenhagen, Denmark</div>
       </div>
 
       <div class="flex items-center gap-6">
-        <a href="/audio/vagn-op/" class="hover:text-amber-400 transition-colors">Gratis Lydbog</a>
+        <a href="/audio/vagn-op/" class="hover:text-amber-400 transition-colors">Free Audio Companion</a>
         <a href="mailto:contact@izaline.eu" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           contact@izaline.eu

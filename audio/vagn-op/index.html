@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="da" class="dark">
+<html lang="en" class="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vågn op — Gratis Lydbog & Gloseliste | Izaline Book Collection</title>
-  <meta name="description" content="Lyt gratis til den komplette lydbog og akustiske udtaletræning til Vågn op (Bog 1) fra Izaline Book Collection.">
+  <title>Vågn op — Free Audio Companion & Pronunciation Practice | Izaline Book Collection</title>
+  <meta name="description" content="Listen for free to the complete audio companion and 3-step pronunciation drills for Vågn op (Book 1) from Izaline Book Collection.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -44,7 +44,7 @@
     <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
       <a href="/" class="flex items-center gap-2.5 text-xs text-slate-400 hover:text-white transition-colors">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-        <span>Tilbage til Izaline</span>
+        <span>Back to Izaline</span>
       </a>
 
       <div class="text-xs font-cinzel tracking-wider text-slate-300 font-bold">
@@ -52,7 +52,7 @@
       </div>
 
       <a href="mailto:contact@izaline.eu" class="text-xs text-slate-400 hover:text-amber-400 transition-colors">
-        Hjælp
+        Help
       </a>
     </div>
   </header>
@@ -62,59 +62,54 @@
     
     <!-- Hero / Album Header -->
     <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 p-6 rounded-2xl bg-nordic-900 border border-slate-800 shadow-xl">
-      <!-- Mini Cover Art -->
-      <div class="w-32 sm:w-40 aspect-[1/1.5] rounded-xl overflow-hidden shadow-2xl border border-slate-700 bg-gradient-to-br from-nordic-800 to-nordic-900 flex flex-col justify-between p-4 flex-shrink-0 text-center">
-        <div class="text-[9px] uppercase tracking-widest text-amber-400 font-semibold">Izaline</div>
-        <div>
-          <div class="font-cinzel text-xl font-bold text-white tracking-wider">VÅGN OP</div>
-          <div class="text-[9px] text-slate-400 italic">Bog 1</div>
-        </div>
-        <div class="text-[8px] text-amber-300/80 uppercase font-semibold">Acoustic Zooming</div>
+      <!-- Real Master Cover Artwork -->
+      <div class="w-32 sm:w-40 aspect-[1/1.5] rounded-xl overflow-hidden shadow-2xl border border-slate-700 bg-nordic-800 flex-shrink-0">
+        <img src="/images/cover.jpg" alt="Vågn op Book Cover Artwork" class="w-full h-full object-cover">
       </div>
 
       <!-- Album Info -->
       <div class="space-y-3 text-center sm:text-left flex-grow">
         <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[11px] font-medium">
           <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
-          Officiel Lydbogs-Companion
+          Official Audio Companion • Book 1 (A1)
         </div>
-        <h1 class="text-2xl sm:text-3xl font-bold font-cinzel text-white">Vågn op: Komplet Lydbog</h1>
+        <h1 class="text-2xl sm:text-3xl font-bold font-cinzel text-white">Vågn op: Audio Companion</h1>
         <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
-          Indtalt i roligt begyndertempo (85% hastighed) med integreret <strong>Akustisk Zooming</strong> udtaletræning efter hvert kapitel.
+          High-definition Danish narration spoken at a gentle 85% learner speed with 3-step pronunciation training after every chapter.
         </p>
 
         <!-- Actions -->
         <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2.5 pt-2">
           <button onclick="playTrack(1)" class="px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs flex items-center gap-2 shadow-lg shadow-amber-500/20 transition-all">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            <span>Start fra Kap. 1</span>
+            <span>Start from Ch. 1</span>
           </button>
           <button onclick="playSpecial('story')" class="px-3.5 py-2.5 rounded-xl bg-nordic-800 hover:bg-nordic-700 border border-slate-700 text-white font-medium text-xs flex items-center gap-1.5 transition-all">
             <span>🚗</span>
-            <span>Kun historien (37 min)</span>
+            <span>Story Only (37 min)</span>
           </button>
           <button onclick="playSpecial('complete')" class="px-3.5 py-2.5 rounded-xl bg-nordic-800 hover:bg-nordic-700 border border-slate-700 text-white font-medium text-xs flex items-center gap-1.5 transition-all">
             <span>🎧</span>
-            <span>Komplet udgave (61 min)</span>
+            <span>Complete Edition (61 min)</span>
           </button>
         </div>
       </div>
     </div>
 
-    <!-- Acoustic Zooming Explainer Box -->
+    <!-- Pronunciation Training Explainer Box -->
     <div class="p-4 rounded-xl bg-nordic-900/60 border border-slate-800 text-xs text-slate-300 space-y-2">
       <div class="font-semibold text-amber-400 flex items-center gap-2">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-        <span>Sådan fungerer udtaletræningen (Acoustic Zooming):</span>
+        <span>How the 3-step pronunciation training works:</span>
       </div>
       <p class="text-slate-400 leading-relaxed">
-        Hvert kapitel indeholder først hele historien, efterfulgt af en kort pause og en ordliste. Hvert ord udtales først <strong>langsomt ved 75%</strong>, derefter ved <strong>100% modersmålshastighed</strong>, efterfulgt af en modelsætning. Gentag gerne ordet højt under pausen!
+        Each chapter begins with the full story narration, followed by a brief pause and key vocabulary practice. Every word is pronounced first <strong>slowly at 75% speed</strong>, then at <strong>natural native speed (100%)</strong>, followed by a model sentence. Practice repeating aloud during the pauses to build confidence with Danish vowels and glottal stops (<em>stød</em>)!
       </p>
     </div>
 
     <!-- Tracklist -->
     <div class="space-y-3">
-      <h2 class="text-xs uppercase tracking-widest text-slate-400 font-semibold px-1">Kapiteloverigt (10 Spor)</h2>
+      <h2 class="text-xs uppercase tracking-widest text-slate-400 font-semibold px-1">Chapter Tracklist (10 Chapters)</h2>
       
       <div class="space-y-2" id="playlist">
         <!-- Track items populated dynamically via JS -->
@@ -131,7 +126,7 @@
       <div class="flex items-center gap-3 text-[11px] text-slate-400 font-mono">
         <span id="current-time">0:00</span>
         <input type="range" id="seek-bar" value="0" min="0" max="100" class="flex-grow h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-amber-500">
-        <span id="total-duration">6:06</span>
+        <span id="total-duration">7:52</span>
       </div>
 
       <!-- Controls Row -->
@@ -145,7 +140,7 @@
         <!-- Center Buttons -->
         <div class="flex items-center gap-3">
           <!-- Skip -15s -->
-          <button onclick="skipTime(-15)" class="p-2 text-slate-400 hover:text-white transition-colors" title="15 sekunder tilbage">
+          <button onclick="skipTime(-15)" class="p-2 text-slate-400 hover:text-white transition-colors" title="15 seconds back">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0019 16V8a1 1 0 00-1.6-.8l-5.334 4zM4.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0011 16V8a1 1 0 00-1.6-.8l-5.334 4z"/></svg>
           </button>
 
@@ -156,7 +151,7 @@
           </button>
 
           <!-- Skip +15s -->
-          <button onclick="skipTime(15)" class="p-2 text-slate-400 hover:text-white transition-colors" title="15 sekunder frem">
+          <button onclick="skipTime(15)" class="p-2 text-slate-400 hover:text-white transition-colors" title="15 seconds forward">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.933 12.8a1 1 0 000-1.6L6.6 7.2A1 1 0 005 8v8a1 1 0 001.6.8l5.333-4zM19.933 12.8a1 1 0 000-1.6l-5.333-4A1 1 0 0013 8v8a1 1 0 001.6.8l5.333-4z"/></svg>
           </button>
         </div>
@@ -172,21 +167,21 @@
     </div>
   </div>
 
-  <!-- Real Audio Element -->
+  <!-- Audio Element -->
   <audio id="audio-engine" preload="metadata"></audio>
 
   <script>
     const chapters = [
-      { id: 1, title: "Kapitel 1: Mørke og lys", dur: "7:52", storyDur: "5:40", vocabDur: "2:09", words: 11, desc: "Freja vågner på Rigshospitalet og møder sygeplejersken Hanne." },
-      { id: 2, title: "Kapitel 2: Det hvide værelse", dur: "6:53", storyDur: "4:55", vocabDur: "1:55", words: 10, desc: "Dr. Christian Møller forklarer, at politiet fandt hende i havnen." },
-      { id: 3, title: "Kapitel 3: Tøjet på stolen", dur: "6:27", storyDur: "3:53", vocabDur: "2:30", words: 13, desc: "Freja opdager tøjet og ser sit eget arrede ansigt i spejlet." },
-      { id: 4, title: "Kapitel 4: Tasken og nøglen", dur: "6:05", storyDur: "3:54", vocabDur: "2:08", words: 11, desc: "Freja finder togbilletten og den mystiske messingnøgle 4B." },
-      { id: 5, title: "Kapitel 5: Ude på gangen", dur: "6:31", storyDur: "4:18", vocabDur: "2:10", words: 11, desc: "Freja tager elevatoren ned mod hospitalets stueetage." },
-      { id: 6, title: "Kapitel 6: En kop kaffe", dur: "5:41", storyDur: "3:31", vocabDur: "2:06", words: 11, desc: "Freja køber mad i kantinen og betaler med kontanter." },
-      { id: 7, title: "Kapitel 7: Ved vinduet", dur: "4:45", storyDur: "2:30", vocabDur: "2:11", words: 11, desc: "Kigger ud på et regnvådt København med cyklister og busser." },
-      { id: 8, title: "Kapitel 8: Manden med avisen", dur: "4:28", storyDur: "2:20", vocabDur: "2:05", words: 11, desc: "En tavs mand observerer hende over kanten af sin avis." },
-      { id: 9, title: "Kapitel 9: Kiosken", dur: "5:16", storyDur: "2:52", vocabDur: "2:21", words: 12, desc: "Avisoverskriften 'Ulykke ved havnen' udløser et flashback." },
-      { id: 10, title: "Kapitel 10: En fremmed i værelset", dur: "6:23", storyDur: "3:59", vocabDur: "2:20", words: 12, desc: "Lukas står i værelset med røde blomster og kalder sig hendes kæreste." }
+      { id: 1, title: "Kapitel 1: Mørke og lys", dur: "7:52", desc: "Freja wakes up in Rigshospitalet and meets nurse Hanne." },
+      { id: 2, title: "Kapitel 2: Det hvide værelse", dur: "6:53", desc: "Dr. Christian Møller explains the police found her near the harbor." },
+      { id: 3, title: "Kapitel 3: Tøjet på stolen", dur: "6:27", desc: "Freja discovers her clothes and sees her scar in the mirror." },
+      { id: 4, title: "Kapitel 4: Tasken og nøglen", dur: "6:05", desc: "Freja finds a train ticket and a mysterious brass key stamped 4B." },
+      { id: 5, title: "Kapitel 5: Ude på gangen", dur: "6:31", desc: "Freja steps into the hallway and takes the elevator downstairs." },
+      { id: 6, title: "Kapitel 6: En kop kaffe", dur: "5:41", desc: "Freja orders bread and coffee in the hospital canteen." },
+      { id: 7, title: "Kapitel 7: Ved vinduet", dur: "4:45", desc: "Watching rain-swept Copenhagen with cyclists and city buses." },
+      { id: 8, title: "Kapitel 8: Manden med avisen", dur: "4:28", desc: "A silent man watches her over the edge of his newspaper." },
+      { id: 9, title: "Kapitel 9: Kiosken", dur: "5:16", desc: "A newspaper headline about a harbor accident triggers a memory." },
+      { id: 10, title: "Kapitel 10: En fremmed i værelset", dur: "6:23", desc: "Lukas stands in her room with red roses, calling himself her boyfriend." }
     ];
 
     let currentTrackIdx = 0;
@@ -233,11 +228,11 @@
     function playSpecial(mode) {
       document.querySelectorAll('.track-card').forEach(el => el.classList.remove('border-amber-500/50', 'bg-nordic-800'));
       if (mode === 'story') {
-        playerTitle.textContent = "Vågn op: Samlet Historie (Bil-udgave)";
+        playerTitle.textContent = "Vågn op: Story Only Edition";
         totalDurationEl.textContent = "37:32";
         audio.src = "vagn_op_full_story.mp3";
       } else {
-        playerTitle.textContent = "Vågn op: Komplet Udgave (Historie & Gloser)";
+        playerTitle.textContent = "Vågn op: Complete Edition (Story & Vocab Drills)";
         totalDurationEl.textContent = "60:57";
         audio.src = "vagn_op_complete_edition.mp3";
       }
@@ -260,12 +255,11 @@
       const activeEl = document.getElementById(`track-item-${ch.id}`);
       if (activeEl) activeEl.classList.add('border-amber-500/50', 'bg-nordic-800');
 
-      // Point to local audio file (or fallback)
+      // Point to local audio file
       audio.src = `chapter_${String(chapterNum).padStart(2, '0')}.mp3`;
       audio.playbackRate = speeds[speedIdx];
       audio.play().then(() => updatePlayState(true)).catch(err => {
-        // Fallback for local demo simulation
-        console.log("Audio play started or simulated:", err);
+        console.log("Audio play started:", err);
         updatePlayState(true);
       });
     }
