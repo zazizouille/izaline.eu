@@ -6,38 +6,129 @@
   <title>Privacy Policy | Izaline Book Collection</title>
   <meta name="description" content="Privacy Policy for Izaline Book Collection and Easy Danish Mysteries.">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            nordic: {
+              950: '#0a0d14',
+              900: '#0f141c',
+              800: '#171f2c',
+              700: '#222d3d',
+              600: '#334155',
+              100: '#e2e8f0',
+              50: '#f8fafc'
+            },
+            amber: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706'
+            }
+          }
+        }
+      }
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; }
     h1, h2, h3, .font-cinzel { font-family: 'Cinzel', serif; }
+    .font-serif-body { font-family: 'Lora', serif; }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-200 antialiased min-h-screen flex flex-col p-6 sm:p-12">
-  <div class="max-w-3xl mx-auto space-y-6">
-    <h1 class="text-3xl font-bold font-cinzel text-amber-400">Privacy Policy</h1>
-    <p class="text-xs text-slate-400">Last updated: November 18, 2026</p>
-    
-    <section class="space-y-2">
-      <h2 class="text-lg font-bold text-white">1. Overview</h2>
-      <p class="text-sm text-slate-300">Izaline Book Collection ("we", "us"), based in Copenhagen, Denmark, operates https://izaline.eu/ and the Facebook page Easy Danish Mysteries. We respect your privacy and adhere strictly to GDPR regulations.</p>
-    </section>
+<body class="bg-nordic-950 text-slate-200 antialiased min-h-screen flex flex-col">
 
-    <section class="space-y-2">
-      <h2 class="text-lg font-bold text-white">2. Data We Collect</h2>
-      <p class="text-sm text-slate-300">We only collect email addresses directly submitted by users for book release notifications. We do not sell, track, or share your data with third parties.</p>
-    </section>
+  <!-- Header -->
+  <header class="border-b border-slate-800 bg-nordic-900/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="font-cinzel text-lg tracking-wider font-bold text-amber-400 hover:text-amber-300 transition-colors">
+        IZALINE BOOK COLLECTION
+      </a>
+      <a href="/" class="text-xs text-slate-400 hover:text-white transition-colors">
+        ← Back to Home
+      </a>
+    </div>
+  </header>
 
-    <section class="space-y-2">
-      <h2 class="text-lg font-bold text-white">3. Meta API & Facebook Automation</h2>
-      <p class="text-sm text-slate-300">Our automated posting tools use Meta's Graph API solely to publish Danish educational content to our public Facebook page. Our app does not harvest, store, or process any private Facebook user data.</p>
-    </section>
+  <!-- Content -->
+  <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+    <div class="space-y-8">
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-bold font-cinzel text-white mb-2">Privacy Policy</h1>
+        <p class="text-slate-400 text-sm">Last updated: November 18, 2026</p>
+      </div>
 
-    <section class="space-y-2">
-      <h2 class="text-lg font-bold text-white">4. Data Deletion & Contact</h2>
-      <p class="text-sm text-slate-300">To request deletion of your email address or data, email us at <a href="mailto:contact@izaline.eu" class="text-amber-400 underline">contact@izaline.eu</a> with the subject "Data Deletion Request". Requests are honored within 30 days.</p>
-    </section>
-  </div>
+      <div class="prose prose-invert max-w-none text-slate-300 space-y-6 text-sm leading-relaxed font-serif-body">
+        <section class="space-y-3">
+          <h2 class="text-xl font-cinzel font-semibold text-amber-400">1. Overview</h2>
+          <p>
+            Izaline Book Collection ("we", "us", or "our"), based in Copenhagen, Denmark, operates 
+            <a href="https://izaline.eu/" class="text-amber-400 underline">https://izaline.eu/</a> and the Facebook page <strong>Easy Danish Mysteries</strong>. 
+            We are committed to protecting your personal information and respecting your privacy in full compliance with the European General Data Protection Regulation (GDPR).
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-cinzel font-semibold text-amber-400">2. Information We Collect</h2>
+          <p>We only collect information directly provided by you, specifically:</p>
+          <ul class="list-disc pl-5 space-y-1 text-slate-300">
+            <li><strong>Email Waitlist:</strong> When you subscribe to receive notifications regarding new book releases or audio companions, we collect your email address.</li>
+            <li><strong>Inquiries:</strong> If you reach out to us directly via email (e.g., contact@izaline.eu), we retain your message and email to respond to your inquiry.</li>
+            <li><strong>Social Media Interactions:</strong> When you interact with our official social media pages (e.g., Easy Danish Mysteries on Facebook or Instagram), we only process public interactions (comments, likes) provided through the respective platform's native tools.</li>
+          </ul>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-cinzel font-semibold text-amber-400">3. Meta API & Facebook Page Automation</h2>
+          <p>
+            Our internal publishing system uses Meta's Graph API to publish educational Danish content, story carousels, and videos to our Facebook Page. 
+            Our application does not store, harvest, process, or sell any private user data, friends lists, or personal browsing profiles from Facebook users.
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-cinzel font-semibold text-amber-400">4. Data Deletion & User Rights</h2>
+          <p>Under GDPR and international privacy regulations, you have the right to:</p>
+          <ul class="list-disc pl-5 space-y-1 text-slate-300">
+            <li>Request access to the personal data we hold about you.</li>
+            <li>Request the immediate deletion or correction of your email or subscription record.</li>
+            <li>Withdraw consent at any time.</li>
+          </ul>
+          <p class="pt-2">
+            To request data deletion or unsubscribe, email us at <a href="mailto:contact@izaline.eu" class="text-amber-400 underline">contact@izaline.eu</a> with the subject line <em>"Data Deletion Request"</em>. All associated data will be removed within 30 days.
+          </p>
+        </section>
+
+        <section class="space-y-3">
+          <h2 class="text-xl font-cinzel font-semibold text-amber-400">5. Contact Information</h2>
+          <p>
+            For any privacy-related questions or data deletion requests, please contact:
+          </p>
+          <div class="bg-nordic-900 border border-slate-800 p-4 rounded-lg space-y-1 text-xs font-mono text-slate-300">
+            <div>Izaline Book Collection</div>
+            <div>Copenhagen, Denmark</div>
+            <div>Email: <a href="mailto:contact@izaline.eu" class="text-amber-400">contact@izaline.eu</a></div>
+            <div>Website: <a href="https://izaline.eu/" class="text-amber-400">https://izaline.eu/</a></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-nordic-950 text-slate-400 text-xs py-8">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="text-slate-500">© 2026 Izaline Book Collection. All rights reserved. • Copenhagen, Denmark</div>
+      <div class="flex items-center gap-4">
+        <a href="/" class="hover:text-amber-400 transition-colors">Home</a>
+        <a href="mailto:contact@izaline.eu" class="hover:text-amber-400 transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
